@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Aplicación que muestra otras apps</title> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--grupo CSS--> 
+	<link rel="Stylesheet" href="css/tema7.min.css"/> 
+	<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+	<!--grupo JavaScript--> 
+	<script src="js/jquery-1.11.1.min.js"></script> 
+	<script src="js/jquery.mobile-1.4.5.min.js"></script> 
+	<script src="phonegap.js"></script><!--nesesario*/--> 
+    
+    <!--Menu Lateral-->
+    <link rel="stylesheet" href="css/sldr.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jsplug.js"></script>
+     <script type="text/javascript">
+	 </script>
+	</head> 
+    <body>
+	<div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> Aplicación que muestra otras apps </h1>
+   </div>
+   <div class="container">
+   <div id="sidebar">
+   <ul data-role="lstview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-icon-right ui-icon-carat-r">
+   <h2> App1 Datos del dispositivo </h2>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-icon-right ui-icon-carat-r">
+   <h2> App5 Advertencia</h2>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-icon-right ui-icon-carat-r">
+   <h2> App6 Deslizar </h2>
+   </a>
+   </li>
+   </ul>
+   </div>
+   
+   <div class="main-content">
+   <div class="swipe-area"></div>
+   <a href="#" data-toggle=".container" id="sidebar-toggle">
+   <span class="bar"></span>
+   <span class="bar"></span>
+   <span class="bar"></span>
+   </a>
+   </div>
+   </div>
+   
+   
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <h4> Dia de la madre tierra </h4>
+   <h4> Serafin Lezama Cordero </h4>
+    <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   </div>
+   </div>
+   
+    
+      <!--Imagenes de sustitucion-->
+    
+
+  
+   
+   <!--Pagina1-->
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> Aplicacion 1 Datos del dispositivo </h1>
+   </div>
+ <div data-role="main" class="ui-content">
+ <div id="disp">
+ <table width="200" border="1" id="datos">
+ <tr>
+ <td width="83">Datos</td>
+ <td width="101">Dispositivo</td>
+ </tr>
+<tr>
+<td>Nombre</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Phonegap</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Plataforma</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td> Versión</td>
+<td>&nbsp; </td>
+</tr>
+<tr>
+<td> UUID</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</div>
+</div>
+
+   <center>
+   
+   <div data-role="main" class="ui-content" align="center">
+   <div style="width:30%;">
+   <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+   <li class="ui-first-child ui-last-child">
+      </li>
+   </ul>
+   </div>
+   </div>
+   </center>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <h4> Serafin Lezama Cordero </h4>
+    <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   </div>
+   </div>
+   
+   
+        
+        <!--Final de la pagina 1-->
+        
+           <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a"> 
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"> 
+         <h1> Aplicación 5 Advertencia </h1>
+    </div>
+        <div data-role="main" class="ui-content" align="center">
+   <div style="width:40%;">
+     <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+      <li class="ui-first-child ui-last-child">
+        <a href="#" data-role="button" id="beep">
+           <h2> Beep</h2>
+           </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#" data-role="button" id="vibrar">
+               <h2> Vibrar</h2>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          
+         <center>
+         
+         
+         <div data-role="main" class="ui-content" align="center">
+         <div style="width:30%;">
+         <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+         <li class="ui-first-child ui-last-child">
+         </li>
+         </ul>
+          </div>
+          </div>
+          </center>
+            <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+           <div>
+           <h4>Serafin Lezama Cordero</h4>
+           <img src="imagenes/mdpi.png" width="46" height="46">
+           </div>
+           </div>
+           </div>      
+           
+           <!-- Final de la pagina 2-->
+           
+             <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a"> 
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"> 
+         <h1> Aplicación 6 Deslizar </h1>
+    </div>
+     <div data-role="main" class="ui-content">
+   <div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-last-child">
+      <a href="#page3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2> Deslizar </h2>
+      </a>
+      </li>
+      </ul>
+      </div>
+      </div>
+      
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <h4> Serafin Lezama Cordero </h4>
+      <img src="res/android/mdpi.png" width="56" height="46">
+      </div>
+      </div>
+      
+      <div data-role="page" id="page3" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Acciones </h1>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+      <div>
+      <ul data-role="controlgroup" data-type="vertical" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child">
+       <a href="#page4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2> izquierda</h2>
+      </a>
+      </li>
+       <li class="ui-first-child">
+       <a href="#page5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2> Derecha</h2>
+      </a>
+      </li>
+      </ul>
+      </div>
+      </div>
+          
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <h4> Serafin Lezama Cordero </h4>
+      <img src="res/android/mdpi.png" width="56" height="46">
+      </div>
+      </div>
+           
+           <div data-role="page" id="page4" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1> Deslizar a la Izquierda</h1>
+      </div>
+      <div data-role="content" align="center">
+      <div id="izquierda" style="width:90%;height:300px;background-color:#E9730B;">
+      </div>
+      
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <h4> Serafin Lezama Cordero</h4>
+       <img src="res/android/mdpi.png" width="56" height="46">
+      </div>
+      </div>
+      
+      
+       <div data-role="page" id="page5" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1> Deslizar a la Derecha</h1>
+      </div>
+      <div data-role="content" align="center">
+      <div id="derecha" style="width:90%;height:300px;background-color:#E9E10F;">
+      </div>
+      
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <h4> Serafin Lezama Cordero</h4>
+       <img src="res/android/mdpi.png" width="56" height="46">
+      </div>
+      </div>
+    <!--Final de la pagina 3-->
+  
+         
+</body>
+</html>
